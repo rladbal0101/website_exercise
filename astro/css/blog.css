@@ -1,0 +1,335 @@
+.header{
+  height:119px;
+  position:relative;
+}
+
+.inner-box{
+  width:940px;
+  margin:0 auto;
+}
+
+.gnb{
+  width:100%;
+  height:75px;
+  background:#fdfdfe;
+  position:relative;
+  top:44px;
+  left:0;
+
+}
+
+.logo{
+  float:left;
+  padding-right:244px;
+}
+
+.logo-link{
+  display: block;
+  width:84px;
+  height:35px;
+  background:url("../images/logo.png") no-repeat;
+  text-indent:-999px;
+  margin-top:24px;
+}
+
+.menu-list-item{
+  float:left;
+  margin-top:32px;
+}
+
+.menu-list-item:nth-child(1){
+  padding-right:40px;
+}
+.menu-list-item:nth-child(2){
+  padding-right:34px;
+}
+.menu-list-item:nth-child(3){
+  padding-right:51px;
+}
+.menu-list-item:nth-child(4){
+  padding-right:41px;
+}
+.menu-list-item:nth-child(5){
+  padding-right:67px;
+}
+
+.menu-list-link{
+  color:#2c4755;
+  font-size:14px;
+}
+
+.input-search{
+  width:142px;
+  height:37px;
+  border:1px solid #ced9df;
+  border-radius:5%;
+  float:right;
+  margin-top:-30px;
+
+}
+
+.util{
+  width:100%;
+  height:44px;
+  background:#c4a2e2;
+  position:absolute;
+  top:0;
+  left:0;
+}
+
+.util-list{
+
+}
+
+.util-list-item{
+  float:left;
+  color:#edf2f6;
+  margin-top:16px;
+  margin-right:40px;
+}
+
+.util-list-item:nth-child(1):before{
+  content:"";
+  display:inline-block;
+  width:16px;
+  height:12px;
+  background:url("../images/astro_sprite.png") no-repeat 0 -101px;
+  margin-right:8px;
+}
+
+.util-list-item:nth-child(2):before{
+  content:"";
+  display:inline-block;
+  width:17px;
+  height:12px;
+  background:url("../images/astro_sprite.png") no-repeat -17px -101px;
+  margin-right:8px;
+}
+
+.flag{
+  margin-top:16px;
+  float:right;
+}
+
+.flag:before{
+  content:"";
+  display:inline-block;
+  width:18px;
+  height:11px;
+  background:url("../images/astro_sprite.png") no-repeat -17px -101px;
+  margin-right:8px;
+}
+
+/*공통 CSS*/
+
+.contents{
+  text-align:center;
+  padding-top:30px;
+  box-sizing:border-box;
+}
+
+.heading-section{
+  color:#2c4755;
+  font-size:25px;
+}
+
+.paragraph{
+  font-size:14px;
+  line-height:1.2;
+  color:#637988;
+}
+.dark{
+  color:#2c4755;
+}
+
+.light{
+  color:#637988;
+}
+
+.image-h100{
+   width:auto;
+   height:100%;
+ }
+
+.image-w100{
+  width:100%;
+  height:auto;
+}
+
+.blue-title{
+  color:#00c7fc;
+  font-size:20px;
+  margin-bottom:25px;
+}
+
+.blue-list-item{
+  color:#637988;
+  margin-bottom:20px;
+}
+
+
+/*영역별 CSS*/
+
+.section1{
+  height:233px;
+  background:url("../images/mid_cloud.png") no-repeat #c4a2e2 bottom;
+}
+
+.section1 .paragraph{
+  margin-top:24px;
+}
+
+.section2{
+  content:"";
+  display:block;
+  clear:both;
+}
+
+.section2:after{
+  content:"";
+  display:block;
+  clear:both;
+}
+
+.inner-box-left{
+  width:700px;
+  float:left;
+}
+
+.inner-box-right{
+  width:220px;
+  float:right;
+  top:0;
+  text-align: left;
+}
+
+.blog{
+  width:700px;
+  height:272px;
+  overflow:hidden;
+}
+
+.blog-text-wrap{
+  text-align:left;
+}
+
+.blog-title{
+  font-size:20px;
+  margin:26px 0 15px;
+}
+
+.detail-date-list-item1{
+  float:left;
+  margin-right:47px;
+}
+.detail-date-list-item1:before{
+  content: "";
+  display: inline-block;
+  width: 11px;
+  height: 11px;
+  background: url("../images/astro_sprite.png") no-repeat 0 -87px;
+  margin-right: 9px;
+  position: relative;
+  top: 2px;
+}
+
+.detail-date-list-item2{
+  float:left;
+}
+.detail-date-list-item2:before{
+  content: "";
+  display: inline-block;
+  width: 13px;
+  height: 12px;
+  background: url("../images/astro_sprite.png") no-repeat -12px -87px;
+  margin-right: 9px;
+  position: relative;
+  top: 2px;
+}
+
+.detail-date-list-item3{
+  float:right;
+}
+.detail-date-list-item3:before{
+  content: "";
+  display: inline-block;
+  width: 14px;
+  height: 11px;
+  background: url("../images/astro_sprite.png") no-repeat -28px -87px;
+  margin-right: 9px;
+  position: relative;
+  top: 2px;
+}
+
+.detail-date-paragraph{
+  font-size:14px;
+  padding-top:28px;
+  margin-bottom:30px;
+}
+
+.btn-detail-date{
+  width:128px;
+  height:35px;
+  margin-bottom:38px;
+  border-radius:5px;
+  background:#00c7fc;
+  border:0;
+  color:#fff;
+}
+
+.search{
+  margin-bottom:66px;
+}
+
+.search-input{
+  width:220px;
+  height:35px;
+  border-radius: 5px;
+  border:1px solid #cfd9e0;
+}
+
+.categorise{
+  margin-bottom:60px;
+}
+
+.footer{
+  height:378px;
+  background:url("../images/mid_cloud.png") no-repeat #c4a2e2 bottom;
+  color:#fff;
+}
+
+.col{
+  float:left;
+}
+
+.list-heading{
+  font-size:17px;
+  margin:28px 198px 28px 0;
+}
+
+.list-heading-sub{
+  font-size:14px;
+  margin-bottom:14px;
+}
+
+.list{
+  font-size:11px;
+  list-style:disc;
+  margin-left:20px;
+}
+
+.list-item{
+  margin:0 0 20px 5px;
+}
+
+.footer-paragraph{
+  width:219px;
+  height:50px;
+  font-size:11px;
+}
+
+.footer-link{
+  float:right;
+  font-size:11px;
+  color:#fff;
+}

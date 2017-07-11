@@ -1,0 +1,91 @@
+.header{
+
+  &-wrap{
+    position:relative;
+    margin:0 48px;
+  }
+}
+
+.logo{
+  position:absolute;
+  margin-top:16px;
+
+  &-link{
+
+    display: block;
+    width: 190px;
+    height: 42px;
+    background:url("../images/elegant_logo.png") no-repeat;
+    text-indent: -99999px;
+
+  }
+
+}
+
+.menu{
+  position:absolute;
+  right:0;
+  font-weight: 400;
+  margin-top:31px;
+}
+
+.btn-menu{
+  width:70px;
+  height:12px;
+  position:relative;
+  display:block;
+  margin-bottom:20px;
+
+  &-name{
+    color:#fff;
+    float:left;
+  }
+
+  &-toggle{
+    width:18px;
+    height:2px;
+    background:#fff;
+    text-indent: -99999px;
+    border:0;
+    position:absolute;
+    top:1px;
+    right:1px;
+
+    &:before{
+      width:18px;
+      height:2px;
+      background:#fff;
+      border:0;
+      position:absolute;
+      top:1px;
+      right:1px;
+    }
+
+    &:after{
+      width:18px;
+      height:2px;
+      background:#fff;
+      border:0;
+      position:absolute;
+      top:1px;
+      right:1px;
+    }
+  }
+
+}
+
+.gnb-list{
+  font-weight: 400;
+  text-align: right;
+
+  &-item{
+    margin-bottom: 15px;
+  }
+
+  &-link{
+
+    color:#fff;
+
+  }
+
+}

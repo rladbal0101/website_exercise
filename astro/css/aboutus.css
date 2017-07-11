@@ -1,0 +1,559 @@
+.header{
+  height:119px;
+  position:relative;
+}
+
+.inner-box{
+  width:940px;
+  margin:0 auto;
+}
+
+.gnb{
+  width:100%;
+  height:75px;
+  background:#fdfdfe;
+  position:relative;
+  top:44px;
+  left:0;
+
+}
+
+.logo{
+  float:left;
+  padding-right:244px;
+}
+
+.logo-link{
+  display: block;
+  width:84px;
+  height:35px;
+  background:url("../images/logo.png") no-repeat;
+  text-indent:-999px;
+  margin-top:24px;
+}
+
+.menu{
+
+}
+
+.menu-list{
+
+}
+
+.menu-list-item{
+  float:left;
+  margin-top:32px;
+}
+
+.menu-list-item:nth-child(1){
+  padding-right:40px;
+}
+.menu-list-item:nth-child(2){
+  padding-right:34px;
+}
+.menu-list-item:nth-child(3){
+  padding-right:51px;
+}
+.menu-list-item:nth-child(4){
+  padding-right:41px;
+}
+.menu-list-item:nth-child(5){
+  padding-right:67px;
+}
+
+.menu-list-link{
+  color:#2c4755;
+  font-size:14px;
+}
+
+.input-search{
+  width:142px;
+  height:37px;
+  border:1px solid #ced9df;
+  border-radius:5%;
+  float:right;
+  margin-top:-30px;
+
+}
+
+.util{
+  width:100%;
+  height:44px;
+  background:#c4a2e2;
+  position:absolute;
+  top:0;
+  left:0;
+}
+
+.util-list{
+
+}
+
+.util-list-item{
+  float:left;
+  color:#edf2f6;
+  margin-top:16px;
+  margin-right:40px;
+}
+
+.util-list-item:nth-child(1):before{
+  content:"";
+  display:inline-block;
+  width:16px;
+  height:12px;
+  background:url("../images/astro_sprite.png") no-repeat 0 -101px;
+  margin-right:8px;
+}
+
+.util-list-item:nth-child(2):before{
+  content:"";
+  display:inline-block;
+  width:17px;
+  height:12px;
+  background:url("../images/astro_sprite.png") no-repeat -17px -101px;
+  margin-right:8px;
+}
+
+.flag{
+  margin-top:16px;
+  float:right;
+}
+
+.flag:before{
+  content:"";
+  display:inline-block;
+  width:18px;
+  height:11px;
+  background:url("../images/astro_sprite.png") no-repeat -17px -101px;
+  margin-right:8px;
+}
+
+/*공통 CSS*/
+
+.contents{
+  text-align:center;
+  padding-top:30px;
+  box-sizing:border-box;
+}
+
+.heading-section{
+  color:#2c4755;
+  font-size:25px;
+}
+
+.paragraph{
+  font-size:14px;
+  line-height:1.2;
+}
+.dark{
+  color:#2c4755;
+}
+
+.light{
+  color:#637988;
+}
+
+.image-h100{
+  width:auto;
+  height:100%;
+}
+
+/*영역별 CSS*/
+
+.section1{
+  height:233px;
+  background:url("../images/mid_cloud.png") no-repeat #c4a2e2 bottom;
+}
+
+.section1 .paragraph{
+  margin-top:24px;
+}
+
+
+.section2{
+
+}
+
+.section3{
+
+}
+
+.section4{
+
+}
+
+.servers{
+
+}
+.servers:before{
+  content:"";
+  display:inline-block;
+  width:205px;
+  height:176px;
+  margin:16px 100px 0 136px;
+  background:url("../images/servers_icon.png") no-repeat;
+  float:left;
+}
+
+.servers-heading{
+  color:#2c4755;
+  font-size:38px;
+  margin:40px 0 16px 0;
+}
+
+.servers-list{
+  margin:36px 0 40px;
+}
+
+.servers-list-item{
+  margin-bottom:13px;
+}
+
+.servers-list-item:before{
+  content: "";
+  display: inline-block;
+  width:20px;
+  height:15px;
+  background:url("../images/astro_sprite.png") no-repeat 0 0;
+  float:left;
+  margin-right:8px;
+}
+
+.do-list{
+  margin:97px 0 40px;
+}
+
+.do-list:after{
+  content:"";
+  display:block;
+  clear:both;
+}
+
+.do-list-item{
+  width:270px;
+  height:63px;
+  position:relative;
+  margin:0 50px 34px 0;
+}
+
+.do-list-item:before{
+  content: "";
+  display:block;
+  width:51px;
+  height:51px;
+  position:absolute;
+  background:#00c7fc;
+  border-radius:50%;
+}
+
+.do-list-item:nth-child(1),
+.do-list-item:nth-child(2),
+.do-list-item:nth-child(3),
+.do-list-item:nth-child(4),
+.do-list-item:nth-child(5),
+.do-list-item:nth-child(6),
+.do-list-item:nth-child(7),
+.do-list-item:nth-child(8),
+.do-list-item:nth-child(9){
+  float:left;
+}
+
+.do-list-item:nth-child(3n){
+  margin-right:0;
+}
+
+.do-list-item:nth-child(1):after{
+  content: "";
+  display:block;
+  clear: both;
+
+  width:22px;
+  height:23px;
+  background:url("../images/astro_sprite.png") no-repeat -1px -16px;
+  position:absolute;
+  top:14px;
+  left:15px;
+}
+
+.do-list-item:nth-child(2):after{
+  content: "";
+  display:block;
+  clear: both;
+
+  width:22px;
+  height:22px;
+  background:url("../images/astro_sprite.png") no-repeat -24px -16px;
+  position:absolute;
+  top:14px;
+  left:15px;
+}
+
+.do-list-item:nth-child(3):after{
+  content: "";
+  display:block;
+  clear: both;
+
+  width:19px;
+  height:22px;
+  background:url("../images/astro_sprite.png") no-repeat -48px -16px;
+  position:absolute;
+  top:16px;
+  left:16px;
+}
+
+.do-list-item:nth-child(4):after{
+  content: "";
+  display:block;
+  clear: both;
+
+  width:21px;
+  height:22px;
+  background:url("../images/astro_sprite.png") no-repeat -1px -39px;
+  position:absolute;
+  top:14px;
+  left:16px;
+}
+
+.do-list-item:nth-child(5):after{
+  content: "";
+  display:block;
+  clear: both;
+
+  width:23px;
+  height:20px;
+  background:url("../images/astro_sprite.png") no-repeat -23px -40px;
+  position:absolute;
+  top:17px;
+  left:15px;
+}
+
+.do-list-item:nth-child(6):after{
+  content: "";
+  display:block;
+  clear: both;
+
+  width:23px;
+  height:22px;
+  background:url("../images/astro_sprite.png") no-repeat -47px -41px;
+  position:absolute;
+  top:14px;
+  left:15px;
+}
+
+.do-list-item:nth-child(7):after{
+  content: "";
+  display:block;
+  clear: both;
+
+  width:23px;
+  height:22px;
+  background:url("../images/astro_sprite.png") no-repeat -1px -65px;
+  position:absolute;
+  top:14px;
+  left:15px;
+}
+
+.do-list-item:nth-child(8):after{
+  content: "";
+  display:block;
+  clear: both;
+
+  width:23px;
+  height:22px;
+  background:url("../images/astro_sprite.png") no-repeat -25px -65px;
+  position:absolute;
+  top:15px;
+  left:15px;
+}
+
+.do-list-item:nth-child(9):after{
+  content: "";
+  display:block;
+  clear: both;
+
+  width:23px;
+  height:22px;
+  background:url("../images/astro_sprite.png") no-repeat -47px -65px;
+  position:absolute;
+  top:14px;
+  left:15px;
+}
+
+.do-list-item-title{
+  font-size:17px;
+  font-weight:500;
+  text-align:left;
+  margin:0 0 20px 60px;
+}
+
+.do-list-item-paragraph{
+  margin-left:60px;
+  text-align:left;
+}
+
+.team-list{
+  margin:97px 0 66px;
+}
+
+.team-list:after{
+  content:"";
+  display:block;
+  clear:both;
+}
+
+.team-list-item{
+  width:218px;
+  height:311px;
+  border:1px solid #dae3e8;
+  float:left;
+  border-radius:10px;
+  overflow:hidden;
+  margin-right:18px;
+}
+
+.team-list-item:last-child{
+  margin-right:0;
+}
+
+.item-photo-wrap{
+  width:221px;
+  height:216px;
+  overflow:hidden;
+}
+
+.item-text-wrap{
+  width:218px;
+  height:93px;
+  position: relative;
+}
+
+.item-text-wrap:before{
+  content:"";
+  display:block;
+  width:218px;
+  height:32px;
+  background:url("../images/clouds.png") no-repeat;
+  position:absolute;
+  top:-32px;
+  left:0;
+}
+
+.item-photo-name{
+  font-size:17px;
+  font-weight:500;
+  margin-bottom:15px;
+}
+
+.item-photo-role{
+  width:166px;
+  font-size:11px;
+  border-top:1px dashed #c3d0d8;
+  padding-top:15px;
+  position:absolute;
+  left:28px;
+}
+
+.section4 .paragraph{
+  font-size:14px;
+  margin-bottom:36px;
+}
+
+.company-wrap{
+  margin:96px 0 65px;
+}
+
+.image-wrap{
+  float:left;
+  position: relative;
+  margin-right:20px;
+}
+.image-wrap:before{
+  content:"";
+  display:block;
+  width:23px;
+  height:44px;
+  background:url("../images/astro_sprite.png") no-repeat 0 -114px;
+  position:absolute;
+  top:70px;
+  left:17px;
+}
+.image-wrap:after{
+  content:"";
+  display:block;
+  width:23px;
+  height:44px;
+  background:url("../images/astro_sprite.png") no-repeat -28px -114px;
+  position:absolute;
+  top:70px;
+  left:344px;
+}
+
+.big-image{
+  width:381px;
+  height:187px;
+  margin-bottom:10px;
+}
+
+
+.image-list-item{
+  width:60px;
+  height:60px;
+  overflow:hidden;
+  float:left;
+  margin-right:20px;
+}
+
+.image-list-item:last-child{
+  margin-right:0;
+}
+
+.company{
+  text-align: left;
+  font-size:14px;
+}
+
+.company>.paragraph{
+  margin-bottom:20px;
+}
+
+.footer{
+  height:378px;
+  background:url("../images/mid_cloud.png") no-repeat #c4a2e2 bottom;
+  color:#fff;
+}
+
+.col{
+  float:left;
+}
+
+.list-heading{
+  font-size:17px;
+  margin:28px 198px 28px 0;
+}
+
+.list-heading-sub{
+  font-size:14px;
+  margin-bottom:14px;
+}
+
+.list{
+  font-size:11px;
+  list-style:disc;
+  margin-left:20px;
+}
+
+.list-item{
+  margin:0 0 20px 5px;
+}
+
+.footer-paragraph{
+  width:219px;
+  height:50px;
+  font-size:11px;
+}
+
+.footer-link{
+  float:right;
+  font-size:11px;
+  color:#fff;
+}
