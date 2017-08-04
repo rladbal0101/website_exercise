@@ -1,10 +1,46 @@
-.section1{
-  width:100%;
-  height:100%;
-  background:url("../images/tulip.jpg") no-repeat fixed;
-}
 
 .main-bg{
   width:100%;
   height:100%;
+  background:url("../images/tulip.jpg") no-repeat;
+  position:absolute;
+
+}
+.menu{
+  width:3750px;
+  position:absolute;
+  top:50%;
+  margin-top:-70px;
+
+  &-list{
+    @extend %clearfix;
+    //overflow-x:auto;
+    //overflow-y:hidden;
+
+
+    &-item{
+      height:160px;
+      float: left;
+      margin-left:200px;
+
+      &:nth-child(1){
+        margin-left:450px;
+      }
+
+    }
+
+    &-link{
+      font-weight: 700;
+      font-size: 130px;
+      color: #333;
+      position:relative;
+
+      &-num{
+        font-size:16px;
+        position: absolute;
+        top:70px;
+        left:-20px;
+      }
+    }
+  }
 }

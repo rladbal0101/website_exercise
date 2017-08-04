@@ -59,5 +59,16 @@ gulp.task('watch', function(){
   gulp.watch('css_src/**', ['sass', 'livereload']);
 });
 
+// concat 실행 - 여러 개의 파일을 하나의 파일로 합치는 기능
+
+gulp.task('gnb', function() {
+  return gulp.src('js_src/gnb/*.js')
+      .pipe(sourcemaps.init())
+      .pipe(concat('gnb.js'))
+      .pipe(sourcemaps.write())
+      .pipe(gulp.dest('js/'));
+});
+
+gulp.task('jsconcat', ['gnb']);
 
 gulp.task('default', ['livereload', 'include', 'sass', 'watch'] );
