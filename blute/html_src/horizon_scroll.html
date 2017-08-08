@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  <style>
+    *{
+      margin:0;
+    }
+    html, body{
+      height:100%;
+    }
+    .container{
+      width:100%;
+      height:100%;
+      overflow:hidden;
+      position:fixed;
+    }
+    .container-scroll{
+      position:absolute;
+      top:50%;
+      transform:translateY(-50%);
+    }
+    .title-list{
+      white-space: nowrap;
+      transition:all .5s ease-out;
+    }
+    .title-list-item{
+      display:inline;
+      padding:0 100px;
+      font-size: 125px;
+      font-weight: bold;
+    }
+  </style>
+  <script src="../js/lib/jquery-3.2.1.min.js"></script>
+  <script>
+    $(function(){
+      var scrollDelta = 0;
+      $(window).on('mousewheel', function(e){
+        if( e.originalEvent.wheelDelta < 0 ){
+          scrollDelta += e.originalEvent.wheelDelta;
+        } else {
+          scrollDelta += e.originalEvent.wheelDelta;
+        }
+        console.log( -1 * ( $('.title-list').offset().left + $('.title-list').width() ) );
+        if( scrollDelta >= 0 ){
+          scrollDelta = 0;
+        } else if( scrollDelta <= -1 * ($('.title-list').offset().left + $('.title-list').width()) ) {
+          scrollDelta = -1 * ($('.title-list').offset().left + $('.title-list').width());
+        }
+        var tr = 'translateX(' + scrollDelta + 'px)';
+        $('.title-list').css({
+          transform: tr
+        });
+      });
+    });
+  </script>
+</head>
+<body>
+
+<div class="container">
+
+  <div class="container-scroll">
+    <ul class="title-list">
+      <li class="title-list-item"><a href="#">TITLE</a></li>
+      <li class="title-list-item"><a href="#">TITLE</a></li>
+      <li class="title-list-item"><a href="#">TITLE</a></li>
+      <li class="title-list-item"><a href="#">TITLE</a></li>
+      <li class="title-list-item"><a href="#">TITLE</a></li>
+    </ul>
+  </div>
+
+</div>
+
+</body>
+</html>

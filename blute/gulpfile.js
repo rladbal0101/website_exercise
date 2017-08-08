@@ -9,23 +9,7 @@ var include = require('gulp-include');
 var sass = require('gulp-sass');
 var watch = require('gulp-watch');
 var sourcemaps = require('gulp-sourcemaps');
-
-/*
-gulp.task (task이름, 함수/익명함수);
-*/
-
-gulp.task('hello1', function () {
-  return console.log('Hello World1!');
-});
-
-gulp.task('hello2', function () {
-  return console.log('Hello World2!');
-});
-
-gulp.task('hello3', function () {
-  return console.log('Hello World3!');
-});
-
+var concat = require('gulp-concat');
 
 // pipe() 는 모듈의 기능을 실행해주는 함수
 
@@ -57,18 +41,19 @@ gulp.task('watch', function(){
   gulp.watch('*', ['livereload']);
   gulp.watch('html_src/**', ['include', 'livereload']);
   gulp.watch('css_src/**', ['sass', 'livereload']);
+  gulp.watch('js_src/**', ['jsconcat', 'livereload']);
 });
 
 // concat 실행 - 여러 개의 파일을 하나의 파일로 합치는 기능
 
-gulp.task('gnb', function() {
-  return gulp.src('js_src/gnb/*.js')
+gulp.task('main', function() {
+  return gulp.src('js_src/*.js')
       .pipe(sourcemaps.init())
-      .pipe(concat('gnb.js'))
+      .pipe(concat('main.js'))
       .pipe(sourcemaps.write())
       .pipe(gulp.dest('js/'));
 });
 
-gulp.task('jsconcat', ['gnb']);
+gulp.task('jsconcat', ['main']);
 
-gulp.task('default', ['livereload', 'include', 'sass', 'watch'] );
+gulp.task('default', ['livereload', 'include', 'sass', 'jsconcat', 'watch'] );

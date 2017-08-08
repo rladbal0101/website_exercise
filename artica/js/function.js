@@ -36,6 +36,7 @@ $(function(){
 
     var scrollPosition = $(href).offset().top;
 
+    // 주르륵 내려가는 효과
     $('body').stop().animate({
       scrollTop : scrollPosition
     });
@@ -128,30 +129,4 @@ $(function(){
 
 
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
