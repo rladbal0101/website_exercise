@@ -1,7 +1,18 @@
-
 .header{
-  width:100%;
   position: absolute;
   z-index: 10;
 }
 
+.logo{
+  padding: 40px 0 0 50px;
+  position: fixed;
+
+  &-link{
+    display:block;
+    width:100px;
+    height:62px;
+    background:url("../images/logo.png") no-repeat;
+    text-indent:-99999px;
+
+  }
+}

@@ -4,14 +4,49 @@
 
 html,body{
   height:100%;
+  background: #000;
+}
+
+body{
+  overflow-x: hidden;
+}
+
+.main{
+  width:100%;
+  height:100%;
+  overflow:hidden;
+  position:absolute;
 }
 
 .main-bg{
   width:100%;
   height:100%;
-  background:url("../images/tulip.jpg") no-repeat;
   overflow:hidden;
   position:absolute;
+
+  .bg-each{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+  }
+
+  .m-tulip{
+    background:url("../images/main/tulip.png") no-repeat;
+  }
+  .m-rose{
+    background:url("../images/main/rose.png") no-repeat;
+  }
+  .m-peony{
+    background:url("../images/main/peony.png") no-repeat;
+  }
+  .m-hydrangea{
+    background:url("../images/main/hydrangea.png") no-repeat;
+  }
+  .m-ranunculus{
+    background:url("../images/main/ranunculus.png") no-repeat;
+  }
 
 }
 .menu{
@@ -25,7 +60,6 @@ html,body{
 
   &-list{
     @extend %clearfix;
-    white-space:nowrap;
     transition:all .5s ease-out;
 
     &-item{
@@ -54,11 +88,11 @@ html,body{
         color:#ff9fb4;
       }
 
-      &-num{
-        font-size:16px;
+      &-num {
+        font-size: 16px;
+        line-height: 150px;
         position: absolute;
-        top:70px;
-        right:10px;
+        left: -43px;
       }
     }
   }

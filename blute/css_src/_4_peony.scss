@@ -1,0 +1,98 @@
+.peony{
+  background:url("../images/peony/peony_page.png") no-repeat fixed;
+
+  &-origin{
+    @extend %clearfix;
+
+    &-popup-img{
+      margin-top: 40px;
+      float: right;
+    }
+  }
+
+  &-type{
+
+    &-popup{
+      @extend %clearfix;
+
+      &-img-wrap{
+        float:left;
+
+        &:nth-child(1),
+        &:nth-child(2){
+          margin-bottom:15px;
+        }
+
+      }
+
+      &-title{
+        width:180px;
+        margin-top:10px;
+        text-align: center;
+      }
+
+    }
+
+  }
+
+}
+
+.popup{
+
+  &-height.peony-type{
+    top: 0;
+    right: 0;
+  }
+  &-width.peony-origin{
+    top: 0;
+    right: 0;
+  }
+
+  &-paragraph.peony-origin{
+    float: left;
+    width: 350px;
+  }
+
+}
+
+.peony-square-wrap>.square{
+
+  &:nth-child(1){
+    top:51px;
+    left:480px;
+  }
+  &:nth-child(2){
+    top:221px;
+    left:0;
+  }
+  &:nth-child(3){
+    top:271px;
+    left:960px;
+  }
+  &:nth-child(4){
+    top:531px;
+    left:480px;
+  }
+  &:nth-child(5){
+    top:531px;
+    left:740px;
+  }
+  &:nth-child(6){
+    top:701px;
+    left:0;
+  }
+  &:nth-child(7){
+    top:791px;
+    left:480px;
+  }
+  &:nth-child(8){
+    top:1051px;
+    left:480px;
+  }
+  &:nth-child(9){
+    top:1051px;
+    left:960px;
+  }
+
+
+}

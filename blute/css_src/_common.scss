@@ -1,21 +1,13 @@
-
 %clearfix:after{
   content:"";
   display:block;
   clear:both;
 }
 
-.logo{
-  padding: 40px 0 0 50px;
-
-  &-link{
-    display:block;
-    width:100px;
-    height:62px;
-    background:url("../images/logo.png") no-repeat;
-    text-indent:-99999px;
-
-  }
+.section{
+  width:100%;
+  height:1800px;
+  position:absolute;
 }
 
 .inner-box{
@@ -23,18 +15,267 @@
   margin:0 auto;
 }
 
+.content-wrap{
+  width: 1200px;
+  height: 1555px;
+  position:absolute;
+  margin-top: 230px;
+}
+
+.title{
+  @extend %clearfix;
+
+  &-eng{
+    font-size:30px;
+    float:left;
+    margin-right: 10px;
+  }
+  &-kor{
+    font-size:13px;
+    float:left;
+    margin-top: 12px;
+  }
+
+}
 
 .square{
   position:absolute;
 
-  &-small{
-    width:460px;
-    height:460px;
-  }
-
-  &-big{
+  &.small{
     width:240px;
     height:240px;
+    background:#1e1d1d;
+
+    &.more{
+      cursor:pointer;
+    }
+
+    &>.small-text{
+      font-size:25px;
+      font-weight: 700;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      line-height: 240px;
+
+    }
+
+  }
+
+  &.big{
+    width:460px;
+    height:460px;
+    overflow: hidden;
+
+    &>.big-image{
+      transition: transform .5s;
+      &:hover{
+        transform: scale(1.15);
+      }
+    }
+  }
+}
+
+.hidden-text-wrap{
+  width:240px;
+  height:240px;
+  font-size:25px;
+  font-weight: 700;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  box-sizing: border-box;
+  display:none;
+
+  &.on{
+    display: block;
+  }
+  // 왼쪽 줄
+  &:before{
+    content:"";
+    display:block;
+    width:5px;
+    height:0;
+    background:#fff;
+    position:absolute;
+    top:0;
+    left:0;
+    transition:all .3s ease-out;
+  }
+
+  &.frame1:before{
+    height:100%;
+  }
+
+  // 아랫줄
+  &:after{
+    content:"";
+    display:block;
+    width:0;
+    height:5px;
+    background:#fff;
+    position:absolute;
+    bottom:0;
+    left:0;
+    transition:all .3s ease-out;
+  }
+
+  &.frame2:after{
+    width:100%;
+  }
+
+  &>.hidden-text{
+    width:240px;
+    height:240px;
+    font-weight: 700;
+    position: absolute;
+
+    // 오른쪽 줄
+    &:after{
+      content:"";
+      display:block;
+      width:5px;
+      height:0;
+      background:#fff;
+      position:absolute;
+      right:0;
+      bottom:0;
+      transition:all .3s ease-out;
+    }
+
+    &.frame3:after{
+      height:100%;
+    }
+
+    // 윗줄
+    &:before{
+      content:"";
+      display:block;
+      width:0;
+      height:5px;
+      background:#fff;
+      position:absolute;
+      right:0;
+      top:0;
+      transition:all .3s ease-out;
+    }
+
+    &.frame4:before{
+      width:100%;
+    }
+
+
+    &.first{
+      padding: 45px 0 0 20px;
+      box-sizing: border-box;
+    }
+    &.middle{
+      font-size:30px;
+      text-align: center;
+      line-height: 240px;
+    }
+    &.last{
+      text-align: right;
+      line-height: 350px;
+      padding: 0 20px 40px 0;
+      box-sizing: border-box;
+    }
+    &.num{
+      font-size: 80px;
+      font-weight: 400;
+    }
+  }
+}
+
+.popup{
+
+  &-width{
+    width:720px;
+    height:460px;
+    background:#1e1d1d;
+    position: absolute;
+    display:none;
+    z-index: 10;
+
+    &.on{
+      display: block;
+    }
+
+    &-inner{
+      width:600px;
+      margin:0 auto;
+    }
+
+  }
+
+  &-height{
+    width:460px;
+    height:720px;
+    background:#1e1d1d;
+    position: absolute;
+    display:none;
+    z-index: 10;
+
+    &.on{
+      display: block;
+    }
+
+    &-inner{
+      width:360px;
+      margin:0 auto;
+    }
+
+  }
+
+  &-title{
+
+    &-eng{
+      color:#282828;
+      font-size:110px;
+      margin:20px 0;
+    }
+
+    &-kor{
+      font-size: 20px;
+      position: absolute;
+      top: 90px;
+    }
+  }
+
+  &-paragraph{
+    position: relative;
+    bottom: -15px;
+    line-height:1.7;
+
+  }
+
+  &-btn{
+
+    &-more{
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      background:url("../images/more_btn.png") no-repeat 190px 190px;
+      border:0;
+      cursor: pointer;
+      outline: none;
+    }
+
+    &-close{
+      width: 18px;
+      height: 18px;
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      background:url(../images/image_sprite.png) no-repeat -33px 0;
+      border: 0;
+      cursor: pointer;
+      outline: none;
+    }
+
   }
 
 }
